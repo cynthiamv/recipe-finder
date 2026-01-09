@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recipe Finder
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Recipe Finder is a modern web application that allows users to search, browse, and save their favorite recipes. The app features a clean interface with dark/light theme support, real-time search capabilities, and persistent favorites storage. Users can explore recipes by category, view detailed recipe information including ingredients and instructions, and maintain a personalized list of favorite recipes.
+
+## Built with
+
+- [Next.js](https://nextjs.org/) - React framework with App Router and Turbopack
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Zustand](https://github.com/pmndrs/zustand) - Lightweight state management
+- [next-themes](https://github.com/pacocoursey/next-themes) - Theme management
+- [Lucide React](https://lucide.dev/) - Beautiful icon library
+
+The data is provided by [TheMealDB](https://www.themealdb.com/)
+
+## Live Version
+
+Coming soon...
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com/)) installed on your computer. You'll also need Node.js version 18 or higher.
+
+From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this repository
+$ git clone https://github.com/cynthiamv/recipe-finder.git
+
+# Go into the repository
+$ cd recipe-finder
+
+# Install dependencies
+$ npm install
+
+# Run the development server
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be running at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔍 **Search Recipes** - Find recipes by name with instant results
+- 📂 **Browse Categories** - Explore recipes organized by categories
+- ❤️ **Save Favorites** - Add recipes to your personal favorites list (persisted locally)
+- 🌙 **Dark/Light Mode** - Toggle between themes with system preference detection
+- ⏳ **Loading States** - Beautiful loading indicators on all pages
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Development
+$ npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for production
+$ npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start production server
+$ npm start
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Run linting
+$ npm run lint
+```
