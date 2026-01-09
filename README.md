@@ -17,7 +17,7 @@ The data is provided by [TheMealDB](https://www.themealdb.com/)
 
 ## Live Version
 
-Coming soon...
+https://recipe-finder-rho-ashy.vercel.app/
 
 ## How To Use
 
